@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+
+
+@theme {
+    --background-image-sunrise: linear-gradient(90deg,rgba(255, 166, 0, 1) 0%, rgba(255, 249, 140, 1) 83%);
+    --background-image-day: linear-gradient(90deg,rgba(255, 210, 46, 1) 0%, rgba(255, 195, 0, 1) 50%, rgba(255, 174, 0, 1) 100%);
+    --background-image-sunset: linear-gradient(90deg, rgba(84, 184, 214, 1) 0%, rgba(77, 63, 140, 1) 100%);
+    --background-image-night: linear-gradient(90deg,rgba(34, 98, 201, 1) 0%, rgba(39, 60, 135, 1) 50%, rgba(10, 19, 56, 1) 100%);
+
+}
