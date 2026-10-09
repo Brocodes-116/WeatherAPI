@@ -4,6 +4,7 @@ import {parse,getHours} from 'date-fns'
 import SearchBar from './components/SearchBar'
 import CurrentWeather from './components/CurrentWeather'
 import HourlyForecast from './components/HourlyForecast'
+import Weeklyforecast from './components/Weeklyforecast'
 
 
 const App = () => {
@@ -70,7 +71,7 @@ const App = () => {
               <div>
                 <CurrentWeather data={Weather.current} location={Weather.location}/>
                 <HourlyForecast data={Weather.hourly}/>
-                {/* <Weeklyforecast data={Weather.weekly}/> */}
+                <Weeklyforecast data={Weather.weekly}/>
               </div>
             )}
           </div>
