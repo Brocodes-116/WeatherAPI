@@ -37,11 +37,11 @@ const CurrentWeather = ({data,location}) => {
     else  return 'Extreme';
   }
     return (
-    <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between p-5 gap-8 text-white w-[400px] sm:w-[600px] md:w-[800px]'>
-        <div className='bg-gray-700 rounded-2xl p-8 border flex justify-between sm:w-[50%] w-full'>
+    <div className='flex flex-col m-auto sm:flex-row sm:items-center sm:justify-between p-5 gap-8 text-white w-[400px] sm:w-[600px] md:w-[800px]'>
+        <div className='bg-gray-700/85 rounded-2xl p-8 border flex justify-between sm:w-[50%] w-full'>
           <div className='flex flex-col gap-3'>
-            <h2>{name}</h2>
-            <h1>{Math.round(temp_c)}°C</h1>
+            <h2 className='text-2xl'>{name}</h2>
+            <h1 className='text-3xl'>{Math.round(temp_c)}°C</h1>
             <p>↑{maxtemp_c} / ↓{mintemp_c}</p>
             <p>Feels like {feelslike_c}</p>
             <p>{getDayAndTime(localtime)}</p>
@@ -51,7 +51,7 @@ const CurrentWeather = ({data,location}) => {
             <p>{condition.text}</p>
           </div>
         </div>
-        <div className='bg-gray-700 rounded-2xl p-8 border sm:w-[50%] w-full'>
+        <div className='bg-gray-700/85 rounded-2xl p-8 border sm:w-[50%] w-full'>
           <div className='flex justify-between my-2 font-bold'>
             <span>💨Wind</span> 
             <span className='flex flex-col items-center'>

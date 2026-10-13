@@ -1,9 +1,8 @@
-import { useState } from 'react'
 import { parse,format } from 'date-fns'
 
 const HourlyForecast = (props) => {
   return (
-    <div className='flex overflow-x-scroll max-w-[800px] text-white p-4 gap-4'>
+    <div className='flex overflow-x-scroll max-w-[400px] sm:max-w-[800px] text-white p-4 gap-4'>
         {
             props.data.map((hour,idx)=>{
                 return (
